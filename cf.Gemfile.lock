@@ -1,12 +1,11 @@
 GIT
-  remote: https://github.com/cloudfoundry/buildpack-packager
-  revision: fcfd9704ee708410156161f7f0493b787a3e1f61
-  tag: v2.3.10
+  remote: https://github.com/SUSE/cf-buildpack-packager
+  revision: 3e82bfb188b6b3606caa0a64cd072904d0c75823
+  tag: v2.3.9
   specs:
-    buildpack-packager (2.3.10)
+    buildpack-packager (2.3.9)
       activesupport (~> 4.1)
       kwalify (~> 0)
-      semantic
       terminal-table (~> 1.4)
 
 GIT
@@ -53,7 +52,6 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.5.0)
     rspec-support (3.5.0)
-    semantic (1.6.0)
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
     thread_safe (0.3.6)
