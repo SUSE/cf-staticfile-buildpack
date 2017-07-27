@@ -2,7 +2,7 @@
 language: staticfile
 default_versions:
 - name: nginx
-  version: 1.13.3
+  version: 1.11.13
 exclude_files:
 - ".git/"
 - ".gitignore"
@@ -21,9 +21,15 @@ exclude_files:
 - src/
 dependencies:
 - name: nginx
-  version: 1.13.3
-  uri: https://buildpacks.cloudfoundry.org/dependencies/nginx/nginx-1.13.3-linux-x64-53917f43.tgz
-  md5: 53917f43684d6ec825ca469ab586c0d2
+  version: 1.11.13
+  uri: https://buildpacks.cloudfoundry.org/dependencies/nginx/nginx-1.11.13-linux-x64-0ae5f6fb.tgz
+  md5: 0ae5f6fbae17cffb087fea4b9518b4f7
   cf_stacks:
   - cflinuxfs2
+- name: nginx
+  version: 1.11.13
+  uri: https://minio.from-the.cloud:9000/cf-buildpacks/dependencies/nginx/nginx-1.11.13-linux-x64-4cb28fc3.tgz
+  md5: 4cb28fc3d8f4e571511563ad7d993af2
+  cf_stacks:
+  - opensuse42
 pre_package: scripts/build.sh
