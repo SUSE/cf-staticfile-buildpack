@@ -28,7 +28,7 @@ dependencies:
   - cflinuxfs2
 - name: nginx
   version: 1.11.13
-  uri: https://minio.from-the.cloud:9000/cf-buildpacks/dependencies/nginx/nginx-1.11.13-linux-x64-4cb28fc3.tgz
+  uri: https://s3.amazonaws.com/cf-opensusefs2/dependencies/nginx/nginx-1.11.13-linux-x64-4cb28fc3.tgz
   md5: 4cb28fc3d8f4e571511563ad7d993af2
   cf_stacks:
   - opensuse42
