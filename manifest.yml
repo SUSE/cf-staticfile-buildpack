@@ -10,6 +10,12 @@ dependencies:
   sha256: 95aff9ab96c23cb1d1c6a9264870b23c7526933c4529ceceb32a8059f542f236
   cf_stacks:
   - cflinuxfs2
+- name: nginx
+  version: 1.11.13
+  uri: https://s3.amazonaws.com/cf-opensusefs2/dependencies/nginx/nginx-1.11.13-linux-x64-4cb28fc3.tgz
+  md5: 4cb28fc3d8f4e571511563ad7d993af2
+  cf_stacks:
+  - opensuse42
 pre_package: scripts/build.sh
 include_files:
 - CHANGELOG
