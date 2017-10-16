@@ -16,6 +16,12 @@ dependencies:
   md5: 4cb28fc3d8f4e571511563ad7d993af2
   cf_stacks:
   - opensuse42
+- name: nginx
+  version: 1.11.13
+  uri: https://s3.amazonaws.com/cf-sle12/dependencies/nginx/nginx-1.11.13-linux-x64-d176638e.tgz
+  md5: d176638e1a4612e007c67ba2ef8a3d91
+  cf_stacks:
+  - sle12
 pre_package: scripts/build.sh
 include_files:
 - CHANGELOG
