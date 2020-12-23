@@ -25,7 +25,7 @@ var _ = Describe("pushing an app a second time", func() {
 		app.Buildpacks = []string{"staticfile_buildpack"}
 	})
 
-	Regexp := `\[.*/nginx-static\_[\d+\.]+\_linux\_x64\_(cflinuxfs.*_)?[\da-f]+\.tgz\]`
+	Regexp := `\[.*/nginx\-[\d\.]+\-linux\-x64\-(.*-)?[\da-f]+\.tgz\]`
 	DownloadRegexp := "Download " + Regexp
 	CopyRegexp := "Copy " + Regexp
 
